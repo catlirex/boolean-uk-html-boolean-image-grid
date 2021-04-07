@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary-colour: #001632;
+}
+
+header {
+  background-color: var(--primary-colour);
+  height: 80px;
+  display: grid;
+  padding-left: 20px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  color: white;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+header a {
+  justify-self: right;
+  text-decoration: none;
+  color: inherit;
+  align-self: center;
+  padding: 20px;
+}
+
+header a:hover {
+  color: greenyellow;
+}
+
+.boolean-logo {
+  border-radius: 50%;
+  width: 50px;
+  align-self: center;
+  margin: 0px 5px;
+}
+
+.key-image img {
+  width: 100vw;
+  height: 400px;
+  object-fit: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px 200px;
+  grid-gap: 10px;
+}
+
+.image-card .article-link a {
+  display: grid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.laptop-image {
+  width: 100%;
+}
+
+article.image-card {
+  border: 1px solid grey;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+article .boolean-logo {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+article ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 35px);
+  justify-content: end;
+  margin: 10px 0px;
+}
+
+article p {
+  padding: 10px 15px;
+}
+
+article p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-colour);
+  height: 80px;
+  color: white;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 910px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px 100px;
+  }
+}
+
+/* detailpage */
+
+.detail-page {
+  display: grid;
+  justify-content: center;
+  margin: 20px 350px;
+  grid-gap: 20px;
+  text-align: center;
+}
+.article-key-image {
+  width: 500px;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.detail-page h1 {
+  font-size: 2rem;
+}
+
+.detail-page li {
+  list-style-position: inside;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.detail-page h3 {
+  display: inline;
+  font-size: 1.2rem;
+}
